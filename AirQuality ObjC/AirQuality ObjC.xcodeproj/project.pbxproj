@@ -13,6 +13,11 @@
 		620C4FCE2385DBF9001500FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620C4FCC2385DBF9001500FE /* LaunchScreen.storyboard */; };
 		620C4FD12385DBF9001500FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 620C4FD02385DBF9001500FE /* main.m */; };
 		7EDFB30B24B6A8DB00B08E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDFB30A24B6A8DB00B08E8C /* Main.storyboard */; };
+		B6478F9F252521970043ED52 /* CityAirQuality.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478F9E252521970043ED52 /* CityAirQuality.m */; };
+		B6478FA32525254C0043ED52 /* DVMWeather.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478FA22525254C0043ED52 /* DVMWeather.m */; };
+		B6478FA72525256D0043ED52 /* DVMPollution.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478FA62525256D0043ED52 /* DVMPollution.m */; };
+		B6478FAF252532330043ED52 /* DVMCityAirQualityController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478FAE252532330043ED52 /* DVMCityAirQualityController.m */; };
+		B6478FB3252539BD0043ED52 /* AirQualityAPI.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6478FB2252539BD0043ED52 /* AirQualityAPI.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		620C4FCF2385DBF9001500FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		620C4FD02385DBF9001500FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EDFB30A24B6A8DB00B08E8C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B6478F9D252521970043ED52 /* CityAirQuality.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CityAirQuality.h; sourceTree = "<group>"; };
+		B6478F9E252521970043ED52 /* CityAirQuality.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityAirQuality.m; sourceTree = "<group>"; };
+		B6478FA12525254C0043ED52 /* DVMWeather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMWeather.h; sourceTree = "<group>"; };
+		B6478FA22525254C0043ED52 /* DVMWeather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMWeather.m; sourceTree = "<group>"; };
+		B6478FA52525256D0043ED52 /* DVMPollution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMPollution.h; sourceTree = "<group>"; };
+		B6478FA62525256D0043ED52 /* DVMPollution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMPollution.m; sourceTree = "<group>"; };
+		B6478FAD252532330043ED52 /* DVMCityAirQualityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVMCityAirQualityController.h; sourceTree = "<group>"; };
+		B6478FAE252532330043ED52 /* DVMCityAirQualityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVMCityAirQualityController.m; sourceTree = "<group>"; };
+		B6478FB2252539BD0043ED52 /* AirQualityAPI.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AirQualityAPI.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +72,9 @@
 		620C4FBD2385DBF6001500FE /* AirQuality ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				B6478F97252514FD0043ED52 /* Model */,
 				7EDFB30924B6A8C700B08E8C /* Views */,
+				B6478F94252514C70043ED52 /* Controllers */,
 				620C4FD72385DDA8001500FE /* Resources */,
 			);
 			path = "AirQuality ObjC";
@@ -75,6 +91,7 @@
 				620C4FCC2385DBF9001500FE /* LaunchScreen.storyboard */,
 				620C4FCF2385DBF9001500FE /* Info.plist */,
 				620C4FD02385DBF9001500FE /* main.m */,
+				B6478FB2252539BD0043ED52 /* AirQualityAPI.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -85,6 +102,44 @@
 				7EDFB30A24B6A8DB00B08E8C /* Main.storyboard */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B6478F94252514C70043ED52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6478F96252514E80043ED52 /* ModelControllers */,
+				B6478F95252514D50043ED52 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6478F95252514D50043ED52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B6478F96252514E80043ED52 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6478FAD252532330043ED52 /* DVMCityAirQualityController.h */,
+				B6478FAE252532330043ED52 /* DVMCityAirQualityController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B6478F97252514FD0043ED52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6478F9D252521970043ED52 /* CityAirQuality.h */,
+				B6478F9E252521970043ED52 /* CityAirQuality.m */,
+				B6478FA12525254C0043ED52 /* DVMWeather.h */,
+				B6478FA22525254C0043ED52 /* DVMWeather.m */,
+				B6478FA52525256D0043ED52 /* DVMPollution.h */,
+				B6478FA62525256D0043ED52 /* DVMPollution.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6478FB3252539BD0043ED52 /* AirQualityAPI.plist in Resources */,
 				7EDFB30B24B6A8DB00B08E8C /* Main.storyboard in Resources */,
 				620C4FCE2385DBF9001500FE /* LaunchScreen.storyboard in Resources */,
 				620C4FCB2385DBF9001500FE /* Assets.xcassets in Resources */,
@@ -160,7 +216,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				620C4FC02385DBF6001500FE /* AppDelegate.m in Sources */,
+				B6478FA32525254C0043ED52 /* DVMWeather.m in Sources */,
+				B6478F9F252521970043ED52 /* CityAirQuality.m in Sources */,
 				620C4FD12385DBF9001500FE /* main.m in Sources */,
+				B6478FA72525256D0043ED52 /* DVMPollution.m in Sources */,
+				B6478FAF252532330043ED52 /* DVMCityAirQualityController.m in Sources */,
 				620C4FC32385DBF6001500FE /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
